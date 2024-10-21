@@ -1,15 +1,15 @@
-
 import './App.css';
 import { Button } from './components/Button';
-function App() {
+import RandomComponent from './components/RandomComponent'; // Importa el nuevo componente
 
+function App() {
   return (
     <>
       <h1>HOLA DESDE VITE</h1>
-      <Button/>
-      
+      <Button />
+      <RandomComponent />  {/* Llama al nuevo componente aquí */}
     </>
-  )
+  );
 }
 
-export default App
+export default App;
