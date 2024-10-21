@@ -1,17 +1,15 @@
-import { usesState, useState} from "react";
+import { useState } from "react";
 
-export const Button = props; => {
-
-    const { text } = props;      'text' is mi
-    const[count, setCount] = useState(0);
+export const Button = () => {
+    const [count, setCount] = useState(0);
 
     function handlerButton() {
-        setCount(count + 1);
+        setCount(count + 5); // Incrementa el contador en 5
     }
 
     return (
         <button onClick={handlerButton}>
-              {text} { count }
+            {count}
         </button>
     );
-} 
+}
